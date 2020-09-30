@@ -1,2 +1,5 @@
 var container = document.getElementById('container');
-container.innerHTML = "hello, world!"
+for (i=0; i < 16; i++) {
+    let div = document.createElement('div')
+    container.appendChild(div);
+}
