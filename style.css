@@ -1,8 +1,10 @@
+#container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .square {
-    width:23%;
-    height: 100px;
-    border: solid black 1px;
-    float:left;
+     
 }
 
 .activated {
