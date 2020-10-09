@@ -3,7 +3,7 @@ buildGrid(prompt("Enter Grid Size"));
 
 
 function buildGrid (gridSize) {
-    var squareSize = (960)/gridSize;
+    var squareSize = 960/gridSize;
     console.log(squareSize);
     console.log(gridSize);
     for (i=0; i < gridSize*gridSize; i++) {
@@ -30,6 +30,14 @@ function removeActive() {
 
 function makeActive(e) {
     e.target.classList.add('activated');
+    var opacity =  parseInt(e.target.style.opacity * 100);
+    console.log(opacity);
+    if (opacity < 100) {
+        opacity += 10
+        opacity = opacity/100;
+        e.target.style.opacity = opacity;
+    }
+    console.log(opacity);
 }
 
 
